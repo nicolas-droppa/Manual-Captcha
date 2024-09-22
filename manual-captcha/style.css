@@ -1,0 +1,38 @@
+.captcha-image-bg {
+    position: relative;
+    width: 200px; 
+    height: 80px; 
+    border: 2px solid black;
+    overflow: hidden;
+}
+
+.captcha-image {
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    font-size: 2rem;
+    overflow: hidden;
+}
+
+.character {
+    width: 20px; 
+    height: 80px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.line {
+    position: absolute;
+    width: 2px;
+    height: 1000px;
+    z-index: 1000;
+}
+
+.dot {
+    position: absolute;
+    width:5px;
+    height: 5px;
+    border-radius: 100%;
+}
