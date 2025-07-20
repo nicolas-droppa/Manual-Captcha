@@ -1,1 +1,78 @@
+# 🧠 Manual CAPTCHA
 
+**Manual CAPTCHA** is a simple yet effective visual CAPTCHA system built with PHP and HTML/CSS. It generates a randomized visual code made of 7 characters distorted with various styles (rotation, skew, font weight, opacity, etc.), and overlays it with randomized lines and dots to prevent easy OCR decoding. Users must manually type the correct code to proceed.
+
+---
+
+## 📋 Table of Contents
+
+1. [🚀 Features](#features)  
+2. [🖼️ Screenshots](#screenshots)  
+3. [🎯 How It Works](#how-it-works)  
+4. [📦 Tech Stack](#tech-stack)  
+5. [💡 Usage](#usage)  
+6. [📌 Future Improvements](#future-improvements)  
+7. [📜 License](#license)
+
+---
+
+## 🚀 Features
+
+- 🔡 **7-Character CAPTCHA** – Randomly generated alphanumeric code.
+- 🎨 **Visual Distortion** – Letters are skewed, rotated, scaled, blurred, and styled randomly.
+- ➿ **Background Noise** – Dots and lines are drawn in random positions, sizes, and opacities.
+- 🧠 **Manual Verification** – Users must read and type the distorted code.
+- ♻️ **Code Refresh** – New CAPTCHA is generated on incorrect attempts.
+
+---
+
+## 🖼️ Screenshots
+
+> Todo 😊
+
+---
+
+## 🎯 How It Works
+
+1. PHP generates a random 7-character string and stores it in a session.
+2. The `randomizer.php` file provides helper functions to apply randomized styles and visual noise.
+3. HTML and PHP render the CAPTCHA with randomly styled characters and background noise.
+4. On form submission, the user input is compared to the stored string.
+5. If correct ➝ redirect to `success.php`. If incorrect ➝ show error and regenerate a new CAPTCHA.
+
+---
+
+## 📦 Tech Stack
+
+- **PHP 8+**
+- **HTML5**
+- **CSS3**
+- *(No external libraries or frameworks used)*
+
+---
+
+## 💡 Usage
+
+1. Place all files in a PHP-enabled server environment (e.g. XAMPP, MAMP, or a live server).
+2. Open `index.php` in your browser.
+3. Type the CAPTCHA code shown in the image.
+4. Click **Submit**.
+5. If successful, you'll be redirected to `success.php`. Otherwise, a new CAPTCHA is generated.
+
+---
+
+## 📌 Future Improvements
+
+- 🖼️ Render CAPTCHA as an actual image (e.g., using canvas)
+- 📱 Responsive design for smaller devices
+- 🔒 Add rate limiting or cooldown on repeated failures
+
+---
+
+## 📜 License
+
+This project is open-source and available under the [MIT License](LICENSE).
+
+---
+
+_Crafted with 💻 and ☕ by Nicolas Droppa_
